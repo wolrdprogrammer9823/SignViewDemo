@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">SignViewDemo</string>
+    <string name="store">存储</string>
+    <string name="redraw">重绘</string>
+</resources>
