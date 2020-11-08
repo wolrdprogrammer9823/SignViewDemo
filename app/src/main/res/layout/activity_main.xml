@@ -19,9 +19,11 @@
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:background="@color/purple_200"
+            android:background="@drawable/btn_bg_color"
+            android:clickable="true"
             style="@android:style/Widget.Material.Button.Borderless"
-            android:text="@string/store"/>
+            android:text="@string/store"
+            android:focusable="true" />
 
         <View
             android:layout_width="@dimen/dp_1"
@@ -33,7 +35,8 @@
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:background="@color/purple_200"
+            android:background="@drawable/btn_bg_color"
+            android:clickable="true"
             style="@android:style/Widget.Material.Button.Borderless"
             android:text="@string/redraw"/>
 
@@ -43,6 +46,17 @@
         android:id="@+id/sign_view"
         android:layout_width="match_parent"
         android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/bottom_layout"/>
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/show_iv"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:visibility="gone"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"

@@ -1,5 +1,6 @@
 package com.wolfsea.signviewdemo;
 import android.content.Context;
+import android.graphics.Bitmap;
 import android.graphics.Canvas;
 import android.graphics.Color;
 import android.graphics.Paint;
@@ -139,6 +140,23 @@ public class SignView extends View {
         total_y_axis.clear();
 
         invalidate();
+    }
+
+    /**
+     *@desc 把轨迹数据转换成Bitmap
+     *@author:liuliheng
+     *@time: 2020/11/6 0:31
+    **/
+    public Bitmap convertDataToBitmap() {
+
+        int width = this.getMeasuredWidth();
+        int height = this.getMeasuredHeight();
+
+        Bitmap bitmap = Bitmap.createBitmap(width, height, Bitmap.Config.ARGB_8888);
+        Canvas canvas = new Canvas(bitmap);
+        this.draw(canvas);
+
+        return bitmap;
     }
 
     /**
