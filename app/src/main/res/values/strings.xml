@@ -2,4 +2,6 @@
     <string name="app_name">SignViewDemo</string>
     <string name="store">存储</string>
     <string name="redraw">重绘</string>
+    <string name="store_show">存储-显示</string>
+    <string name="cut_store_show">截取-存储-显示</string>
 </resources>

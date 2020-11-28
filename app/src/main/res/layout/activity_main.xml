@@ -15,22 +15,6 @@
         app:layout_constraintBottom_toBottomOf="parent">
 
         <androidx.appcompat.widget.AppCompatButton
-            android:id="@+id/store_btn"
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:background="@drawable/btn_bg_color"
-            android:clickable="true"
-            style="@android:style/Widget.Material.Button.Borderless"
-            android:text="@string/store"
-            android:focusable="true" />
-
-        <View
-            android:layout_width="@dimen/dp_1"
-            android:layout_height="match_parent"
-            android:background="@color/purple_700"/>
-
-        <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/redraw_btn"
             android:layout_width="0dp"
             android:layout_height="match_parent"
@@ -39,6 +23,54 @@
             android:clickable="true"
             style="@android:style/Widget.Material.Button.Borderless"
             android:text="@string/redraw"/>
+
+        <View
+            android:layout_width="@dimen/dp_1"
+            android:layout_height="match_parent"
+            android:background="@color/purple_700"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/store_btn"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/btn_bg_color"
+            android:clickable="true"
+            android:visibility="gone"
+            style="@android:style/Widget.Material.Button.Borderless"
+            android:text="@string/store"
+            android:focusable="true" />
+
+        <View
+            android:layout_width="@dimen/dp_1"
+            android:layout_height="match_parent"
+            android:visibility="gone"
+            android:background="@color/purple_700"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/store_show_btn"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/btn_bg_color"
+            android:clickable="true"
+            style="@android:style/Widget.Material.Button.Borderless"
+            android:text="@string/store_show"/>
+
+        <View
+            android:layout_width="@dimen/dp_1"
+            android:layout_height="match_parent"
+            android:background="@color/purple_700"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/cut_store_show_btn"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/btn_bg_color"
+            android:clickable="true"
+            style="@android:style/Widget.Material.Button.Borderless"
+            android:text="@string/cut_store_show"/>
 
     </androidx.appcompat.widget.LinearLayoutCompat>
 

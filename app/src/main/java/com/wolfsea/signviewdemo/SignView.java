@@ -20,6 +20,9 @@ public class SignView extends View {
 
     private Paint paint;
 
+    //截取一部分位图
+    private boolean cutBitmap = false;
+
     private CopyOnWriteArrayList<Float> x_axis;
     private CopyOnWriteArrayList<Float> y_axis;
 
@@ -154,6 +157,14 @@ public class SignView extends View {
 
         Bitmap bitmap = Bitmap.createBitmap(width, height, Bitmap.Config.ARGB_8888);
         Canvas canvas = new Canvas(bitmap);
+
+        //截取一部分Bitmap
+        boolean cutBitmap = mIsCutBitmap();
+        if (cutBitmap) {
+
+            canvas.clipRect(0, height / 3, width, height * 2 / 3);
+        }
+
         this.draw(canvas);
 
         return bitmap;
@@ -176,5 +187,13 @@ public class SignView extends View {
 
         total_x_axis = new ArrayList<>();
         total_y_axis = new ArrayList<>();
+    }
+
+    public boolean mIsCutBitmap() {
+        return cutBitmap;
+    }
+
+    public void setCutBitmap(boolean cutBitmap) {
+        this.cutBitmap = cutBitmap;
     }
 }
