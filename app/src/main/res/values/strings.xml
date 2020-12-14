@@ -4,4 +4,6 @@
     <string name="redraw">重绘</string>
     <string name="store_show">存储-显示</string>
     <string name="cut_store_show">截取-存储-显示</string>
+    <string name="kotlin_version">Kotlin版本</string>
+    <string name="java_version">Java版本</string>
 </resources>

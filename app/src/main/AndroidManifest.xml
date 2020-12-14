@@ -13,14 +13,19 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.SignViewDemo">
-        <activity android:name=".base.BaseActivity"></activity>
-        <activity android:name=".MainActivity">
+
+        <activity android:name=".EntranceActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <activity android:name=".base.BaseActivity" />
+        <activity android:name=".base.BaseActivityForKotlin" />
+        <activity android:name=".KotlinStyleActivity" />
+        <activity android:name=".MainActivity" />
         <activity android:name=".ShowSignatureActivity" />
 
         <provider
